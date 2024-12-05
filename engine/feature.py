@@ -93,7 +93,7 @@ def openCommand(query):
     elif 'news' in query:
         try:
         # Replace 'YOUR_API_KEY' with your actual API key
-            api_key = "5d331fde643e40faa2b5c64b0527f12c"
+            api_key = "YOUR API KEY"
             jsonObj = urlopen(f'https://newsapi.org/v1/articles?source=the-times-of-india&sortBy=top&apiKey={api_key}')
             data = json.load(jsonObj)
 
