@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEURA</title>
+
+    <!-- Bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Particle js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+        type="text/javascript"></script>
+    <!--Texllate -->
+    <link rel="stylesheet" href="assests/vendores/textillate/animate.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <section id="Oval" class="mb-4">
+        </section>
+        <section id="SiriWave" class="mb-4" hidden>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="d-flex justify-content-center align-item-center" style="height: 150vh;">
+                            <div class="">
+                                <p class="text-start text-light mb-4 siri-message" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" style="font-size: 28px;"> hello , I am NEURA </p>
+                                <div id="Siri-Container"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="row">
+            <div class="col md-1"></div>
+            <div class="col md-10">
+                <canvas id="canvasOne" width="420" height="420" style="position: absolute;"
+                    style="height: max-content; width: max-content;"> </canvas>
+                <div class="d-flex justify-content-center align-item-center" style="height: 80vh;">
+
+
+
+                    <div id="Neurahood">
+                        <div class="square">
+                            <span class="circle"></span>
+                            <span class="circle"></span>
+                            <span class="circle"></span>
+                        </div>
+                    </div>
+
+                </div>
+                <h5 class="text-light text text-center" style="font-style: italic ;">how may i assist you?</h5>
+                        <div id="responseArea"></div>
+                <div class="col-md-12">
+                    <div class=text-center>
+                        <div id="textinput" class="d-flex">
+                            <input type="text" class="input-field" name="chatbox" id="chatbox"
+                                placeholder="type here ......">
+                            <button id="SendBtn" class="glow-on-hover"><i class="bi bi-send"></i></button>
+                            <button id="MicBtn" class="glow-on-hover"><i class="bi bi-mic"></i></button>
+                            <button id="ChatBtn" class="glow-on-hover" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i
+                                    class="bi bi-chat-dots"></i></button>
+                            <button id="SettingsBtn" class="glow-on-hover"><i class="bi bi-gear"></i></button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col md-1"></div>
+
+        </div>
+        </section>
+
+        <!--Jquery  -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <!-- Particle -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+        <script src="script (1).js"> </script>
+        <!-- siri -->
+        <script src="https://unpkg.com/siriwave/dist/siriwave.umd.min.js"></script>
+
+        <!-- Texllate -->
+        <script src="assests/vendores/textillate/jquery.fittext.js"></script>
+        <script src="assests/vendores/textillate/jquery.lettering.js"></script>
+        <script src="http://jschr.github.io/textillate/jquery.textillate.js"></script>
+
+        <script src="./main.js"></script>
+        <script src="controller.js"></script>
+        <script src="/eel.js"></script>
+
+</body>
+
+</html>
